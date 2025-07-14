@@ -16,23 +16,23 @@ export function WhiskerLogo({ size = 'md', showText = true, className = '' }: Wh
   
   return (
     <div className={`flex items-center space-x-3 ${className}`}>
-      {/* WhiskerSwap Logo - CSS-based cat design */}
+      {/* WhiskerSwap Logo - Beautiful 3D Cat */}
       <div className="relative">
-        <div 
-          className="rounded-full bg-gradient-to-br from-teal-400 to-mint-500 flex items-center justify-center font-bold text-white"
-          style={{ width: icon, height: icon, fontSize: Math.floor(icon * 0.4) }}
-        >
-          🐱
-        </div>
+        <img 
+          src="/whisker-logo.png"
+          alt="WhiskerSwap Logo"
+          className="object-contain"
+          style={{ width: icon, height: icon }}
+        />
         
-        {/* Subtle glow effect */}
-        <div className="absolute inset-0 rounded-full bg-teal-500/20 blur-md -z-10"></div>
+        {/* Enhanced glow effect for the 3D logo */}
+        <div className="absolute inset-0 rounded-full bg-teal-400/30 blur-lg -z-10"></div>
       </div>
       
       {showText && (
         <div className="flex flex-col">
-          <h1 className={`font-bold ${text} text-gray-900 dark:text-white leading-none`}>
-            WhiskerSwap
+          <h1 className={`font-black ${text} text-teal-600 dark:text-teal-400 leading-none`}>
+            WhiskerSwap Aggregator
           </h1>
         </div>
       )}
